@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'mono': ['Major Mono Display', 'monospace','sans-serif']
+        'mono': ['Major Mono Display', 'monospace','sans-serif'],
+        'raleway': ['Raleway', 'sans-serif']
       }
     },
   },

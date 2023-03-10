@@ -1,8 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { motion } from "framer-motion"
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,7 +15,7 @@ export default function Home() {
         >
           <div className='absolute flex flex-row w-screen h-full bg-transparent z-20'>
             <div id='projectsLink' className='w-1/4 h-screen flex justify-center items-center opacity-0 hover:opacity-100 transition duration-500 bg-gradient-to-l from-transparent to-yellow-400'>
-              <h2 className='text-3xl bg-gradient-to-l from-yellow-400 to-purple-700 text-transparent bg-clip-text sm:rotate-[270deg] md:rotate-0'>My Projects</h2>
+              <Link href='/projects' className='text-3xl bg-gradient-to-l from-yellow-400 to-purple-700 text-transparent bg-clip-text sm:rotate-[270deg] md:rotate-0'>My Projects</Link>
             </div>
 
             <div id='headline' className='w-2/4 h-screen flex flex-col justify-center items-center font-bold'>
