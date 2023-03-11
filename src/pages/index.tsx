@@ -18,13 +18,13 @@ export default function Home() {
               <Link href='/projects' className='text-3xl bg-gradient-to-l from-yellow-400 to-purple-700 text-transparent bg-clip-text sm:rotate-[270deg] md:rotate-0'>My Projects</Link>
             </div>
 
-            <div id='headline' className='w-2/4 h-screen flex flex-col justify-center items-center font-bold'>
+            <div id='headline' className='w-2/4 h-screen flex flex-col justify-center items-center font-bold animate-fade-in'>
               <h1 className='text-4xl text-yellow-400 text-center mb-4'>Hi, I'm {' '}
                 <span className='bg-gradient-to-l from-red-600 to-sky-700 text-transparent bg-clip-text'>
                   James.
                 </span>
               </h1>
-              <p className='text-2xl text-yellow-400 text-center'>I'm a {' '}
+              <p className='text-2xl text-yellow-400 text-center animate-fade-in-long'>I'm a {' '}
                 <span className='bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text'>
                   Junior Software Developer
                 </span> 
@@ -33,7 +33,7 @@ export default function Home() {
                   Vancouver, BC.  
                 </span>
               </p>
-              <p className='text-xl text-yellow-400 text-center mt-4'>Mouse {' '}
+              <p className='text-xl text-yellow-400 text-center mt-4 animate-fade-in-long'>Mouse {' '}
               <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
                   left
               </span>
@@ -42,10 +42,9 @@ export default function Home() {
                 right
               </span>
                 {' '}to learn more about me!</p>
-            </div>
-
+            </div>                        
             <div id='aboutLink' className='w-1/4 h-screen flex justify-center items-center opacity-0 hover:opacity-100 transition duration-500 bg-gradient-to-r from-transparent to-purple-700'>
-              <h2 className='text-3xl bg-gradient-to-l from-yellow-400 to-purple-700 text-transparent bg-clip-text sm:rotate-90 md:rotate-0'>About Me</h2>
+              <Link href='about_me' className='text-3xl bg-gradient-to-l from-yellow-400 to-purple-700 text-transparent bg-clip-text sm:rotate-90 md:rotate-0'>About Me</Link>
             </div>
           </div>
 

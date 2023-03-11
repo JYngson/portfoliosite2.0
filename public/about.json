@@ -1,0 +1,25 @@
+{
+  "greeting":"Hi, I'm James. 👋",
+  "headline":"I'm a junior software developer working for a startup situated in Vancouver, BC.",
+  "stats":{
+    "years": 3, 
+    "location":"Vancouver, BC",
+    "primaryTech": ["Javascript", "React", "HTML", "CSS", "Next.js", "TypeScript"], 
+    "secondaryTech": ["Python", "Django", "PostgreSQL"],
+    "education": [
+      {
+        "school": "Athabasca University",
+        "dateAttended": "May 2023 - Present"
+      },
+      {
+        "school":"Brainstation Web Development Bootcamp",
+        "dateAttended": "November 2020 - Feburary 2021"
+      }
+    ],
+    "interests" : ["Songwriting", "Music Production", "Cooking", "Video Games"],
+    "github": "https://github.com/TjArevalo"
+  },
+  "about":"Example"
+  
+
+}
