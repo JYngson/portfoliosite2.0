@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   Accordion,
   AccordionItem,
@@ -6,6 +5,7 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from 'react-accessible-accordion';
+import {BsGithub, BsLink, BsLinkedin} from 'react-icons/bs'
 
 type accordionProps = {
   stats: stats,
@@ -19,7 +19,8 @@ type stats = {
   secondaryTech: string[],
   education: school[],
   interests: string[],
-  github: string
+  github: string,
+  linkedin: string
 };
 
 type school = {
@@ -39,7 +40,10 @@ const AccordionComponent: React.FunctionComponent<accordionProps> = (props) => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className='flex flex-col p-4 bg-neutral-300 bg-opacity-30 rounded-xl'>
-                  <a href={stats.github} className='w-fit text-2xl text-purple-900 border-2 border-purple-700 rounded-xl p-1 mb-2'>My Github</a>
+                  <div className='mb-2 flex flex-row'>
+                    <BsGithub href={stats.github} size={'3em'} className='mr-2' color={'#333'} />
+                    <BsLinkedin href={stats.linkedin} size={'3em'} color={'#313335'} />
+                  </div>              
                   <p className='text-lg text-white'>Years Coding: <span className='text-black'>{stats.years}</span></p>
                   <p className='text-lg text-white'>Location: <span className='text-black'>{stats.location}</span></p>
                   <p className='text-lg text-white'>Primary Technologies: {stats.primaryTech.map(tech =>
