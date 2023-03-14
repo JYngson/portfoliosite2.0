@@ -8,11 +8,10 @@ export default function Home() {
     <div id='homepage'>
       <Head>
         <title>James Yngson Portfolio Site</title>
-        <link href='https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap' rel='stylesheet'></link>
         <link rel="shortcut icon" href='/yin-yang.ico' />
       </Head>
         <div 
-          id='wrapper'
+          id='homepageWrapper'
           className='relative flex w-screen h-screen justify-center items-center bg-neutral-900 overflow-hidden font-mono'
         >
           <Navbar/>
