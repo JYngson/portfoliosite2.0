@@ -26,7 +26,7 @@ export default function projects() {
                     <div key={uuid()} className='flex flex-col w-full my-2 rounded-xl border-2 border-stone-500 bg-neutral-300 space-y-1 p-4 drop-shadow-xl'>
                       <div>
                         <h2 className='text-2xl bg-gradient-to-r from-yellow-400 to-purple-700 text-transparent bg-clip-text w-fit'>{project.title}</h2>
-                        <p>{project.type} // {project.date}</p>
+                        <p>{project.type}&nbsp;{project.date}</p>
                       </div>
                       <p>{project.description}</p>
                       <div className='flex flex-row'>
