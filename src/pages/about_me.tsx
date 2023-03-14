@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Navbar from '../../components/navbar'
 import AccordionComponent from '../../components/accordion'
 import aboutData from '../../public/about.json'
+import ProfilePic from '../../public/profilepic.jpg'
 
 export default function about_me() {
   return (
@@ -15,7 +16,8 @@ export default function about_me() {
         <div className='flex flex-col items-center w-screen'>
           <div className='w-[150px] h-[150px] rounded-full relative mb-6'>
             <Image
-              src="/profilepic.jpg"
+              src={ProfilePic}
+              placeholder='blur'
               alt="Me!"
               className='rounded-full'
               fill
