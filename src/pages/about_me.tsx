@@ -9,7 +9,6 @@ export default function about_me() {
     <div>
       <Head>
         <title>My Projects</title>
-        <link href='https://fonts.googleapis.com/css2?family=Raleway&display=swap' rel='stylesheet'/>
       </Head>
       <div id='aboutPage' className='flex flex-col items-center w-screen h-screen bg-slate-700 font-raleway overflow-scroll pt-20'>
         <Navbar />
