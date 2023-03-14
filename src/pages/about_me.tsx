@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from './components/navbar'
-import AccordionComponent from './components/accordion'
+import Navbar from '../../components/navbar'
+import AccordionComponent from '../../components/accordion'
 import aboutData from '../../public/about.json'
 
 export default function about_me() {

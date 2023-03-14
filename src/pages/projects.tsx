@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import projectList from "../../public/projects.json"
-import Navbar from './components/navbar'
+import Navbar from '../../components/navbar'
 import { uuid } from 'uuidv4'
 
 

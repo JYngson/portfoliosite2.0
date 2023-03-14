@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Navbar from './components/navbar'
+import Navbar from '../../components/navbar'
 import { motion } from "framer-motion"
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
                 <span className='bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text'>
                   Junior Software Developer
                 </span> 
-            &nbsp;based out o&nbsp;
+            &nbsp;based out of&nbsp;
                 <span className='bg-gradient-to-r from-fuchsia-600 to-green-400 text-transparent bg-clip-text'>
                   Vancouver, BC.  
                 </span>
@@ -39,7 +39,7 @@ export default function Home() {
               <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
                   left
               </span>
-              &nbsp;o&nbsp; 
+              &nbsp;or&nbsp; 
               <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
                 right
               </span>
