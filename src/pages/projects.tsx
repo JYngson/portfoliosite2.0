@@ -30,7 +30,7 @@ export default function projects() {
                       </div>
                       <p>{project.description}</p>
                       <div className='flex flex-row'>
-                        <p> Skills: {" "}
+                        <p> Skills:&nbsp;
                           {
                             project.primarySkills.map(skill => {
                               return(
@@ -42,11 +42,11 @@ export default function projects() {
                       </div>
 
                       <div className='flex flex-row'>
-                        <p className='text-sm'> Keywords: {" "}
+                        <p className='text-sm'> Keywords:&nbsp;
                           {
                             project.keywords.map(keyword => {
                               return(
-                                <span key={uuid()}>{keyword} {" "} </span>
+                                <span key={uuid()}>{keyword}&nbsp; </span>
                               )
                             })
                           }
