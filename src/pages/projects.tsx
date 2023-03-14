@@ -5,16 +5,15 @@ import Navbar from './components/navbar'
 
 
 export default function projects() {
-
   return (
     <div>
       <Head>
         <title>My Projects</title>
         <link href='https://fonts.googleapis.com/css2?family=Raleway&display=swap' rel='stylesheet'/>
       </Head>
-      <div id='projectPage' className='flex flex-col items-center w-screen h-fit bg-slate-700 font-raleway'>
-        <Navbar />
+      <div id='projectPage' className='flex flex-col items-center w-screen h-screen bg-slate-700 font-raleway py-20 overflow-scroll'>
         <div id='projectPageWrapper' className='flex flex-col w-5/6 items-center'>
+        <Navbar />
 
           <div id='projectPageHeader' className='flex items-center m-4 w-5/6 h-20 bg-gray-800 rounded-xl'>
             <h1 className='w-full text-center text-3xl text-white'>My Projects</h1>
