@@ -50,14 +50,14 @@ const AccordionComponent: React.FunctionComponent<accordionProps> = (props) => {
           </div>              
           <p className='text-lg text-white'>Years Coding: <span className='text-black hover:text-purple-700'>{stats.years}</span></p>
           <p className='text-lg text-white'>Location: <span className='text-black hover:text-purple-700'>{stats.location}</span></p>
-          <p className='text-lg text-white'>Primary Technologies: {stats.primaryTech.map(tech =>
+          <p className='text-lg text-white overflow-wrap'>Primary Technologies: {stats.primaryTech.map(tech =>
             <span key={uuid()} className='text-black hover:text-purple-700'>
-              {tech}&nbsp;
+              {tech}{" "}
             </span>)}
           </p>
           <p className='text-lg text-white'>Currently Learning: {stats.secondaryTech.map(tech =>
             <span key={uuid()} className='text-black hover:text-purple-700'>
-              {tech}&nbsp;
+              {tech}{" "}
             </span>)}
           </p>
           <h2 className='text-lg text-white'>Education:</h2>
