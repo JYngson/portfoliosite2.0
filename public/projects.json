@@ -16,14 +16,14 @@
     "description":"Creation of a data visualization tool which displayed artist album collaborations based on data pulled from the Spotify API.",
     "primarySkills":["Typescript", "Next.js", "Tailwind.css", "Axios.js", "Express.js", "Three.js", "React Three Fibre", "React Three Drei"],
     "link":"https://github.com/TjArevalo/artistcollabweb",
-    "keywords": ["FullStack Development", "Data Visualization","3D Visuals", "Spotify API"]
+    "keywords": ["FullStack Development", "Data Visualization", "3D Visuals", "Spotify API"]
   }, 
   {
     "title": "Sleepy",
     "type": "Contract Work",
     "date": "June 2021 - November 2021",
     "description":"Designed and developed a portfolio site for a designer in Vancouver BC.",
-    "primarySkills":["Javascript","React","Framer Motion","SASS", "Figma", "Netlify"],
+    "primarySkills":["Javascript", "React", "Framer Motion", "SASS", "Figma", "Netlify"],
     "link":"https://github.com/TjArevalo/jayteeportfolio",
     "keywords": ["Front-End Development"]
   },

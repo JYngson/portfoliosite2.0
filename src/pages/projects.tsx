@@ -11,7 +11,7 @@ export default function projects() {
       <Head>
         <title>My Projects</title>
       </Head>
-      <div id='projectPage' className='flex flex-col items-center w-screen h-screen bg-slate-700 font-raleway py-20 overflow-scroll'>
+      <div id='projectPage' className='flex flex-col items-center w-screen h-fit bg-slate-700 font-raleway py-20'>
         <div id='projectPageWrapper' className='flex flex-col w-5/6 items-center'>
         <Navbar />
 
@@ -29,12 +29,12 @@ export default function projects() {
                         <p>{project.type}&nbsp;{project.date}</p>
                       </div>
                       <p>{project.description}</p>
-                      <div className='flex flex-row'>
+                      <div className='flex flex-row w-fit'>
                         <p> Skills:&nbsp;
                           {
                             project.primarySkills.map(skill => {
                               return(
-                                <span key={uuid()} className='mr-2 text-slate-500'>{skill}</span>
+                                <span key={uuid()} className='text-slate-500'>{skill} &nbsp;</span>
                               )
                             })
                           }

@@ -48,27 +48,27 @@ const AccordionComponent: React.FunctionComponent<accordionProps> = (props) => {
               <BsLinkedin size={'3em'} color={'#313335'} />
             </a>
           </div>              
-          <p className='text-lg text-white'>Years Coding: <span className='text-black'>{stats.years}</span></p>
-          <p className='text-lg text-white'>Location: <span className='text-black'>{stats.location}</span></p>
+          <p className='text-lg text-white'>Years Coding: <span className='text-black hover:text-purple-700'>{stats.years}</span></p>
+          <p className='text-lg text-white'>Location: <span className='text-black hover:text-purple-700'>{stats.location}</span></p>
           <p className='text-lg text-white'>Primary Technologies: {stats.primaryTech.map(tech =>
-            <span key={uuid()} className='text-black'>
-              {tech} {" "}
+            <span key={uuid()} className='text-black hover:text-purple-700'>
+              {tech}&nbsp;
             </span>)}
           </p>
           <p className='text-lg text-white'>Currently Learning: {stats.secondaryTech.map(tech =>
-            <span key={uuid()} className='text-black'>
-              {tech} {" "}
+            <span key={uuid()} className='text-black hover:text-purple-700'>
+              {tech}&nbsp;
             </span>)}
           </p>
           <h2 className='text-lg text-white'>Education:</h2>
           {stats.education.map(school =>
-          <div key={uuid()} className='ml-2 my-2'>
-            <p className='text-lg text-white underline'>{school.school}</p>
-            <p className='text-lg text-white'>- {school.dateAttended}</p>
-          </div>
+            <div key={uuid()} className='ml-2 my-2'>
+              <p className='text-lg text-white underline'>{school.school}</p>
+              <p className='text-lg text-white'>- {school.dateAttended}</p>
+            </div>
           )}
           <p className='text-lg text-white'>Hobbies: {stats.interests.map(hobby =>
-            <span key={uuid()} className='text-black'>
+            <span key={uuid()} className='text-black hover:text-purple-700'>
               | {hobby} |
             </span>)}
           </p>
@@ -81,7 +81,7 @@ const AccordionComponent: React.FunctionComponent<accordionProps> = (props) => {
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel className='p-4 bg-neutral-300 bg-opacity-30 rounded-xl whitespace-pre-line'>
-          <p>
+          <p className='text-slate-200'>
             {about}
           </p>
         </AccordionItemPanel>
