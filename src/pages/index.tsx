@@ -1,9 +1,17 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../../components/navbar'
 import { motion } from "framer-motion"
 
 export default function Home() {
+  const [width, setWidth] = useState<number>(0)
+  const breakpoint:number = 1024
+  
+  useEffect(()=> {
+    setWidth(window.innerWidth)
+  })
+
   return (
     <div id='homepage'>
       <Head>
@@ -30,20 +38,27 @@ export default function Home() {
                 <span className='bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text'>
                   Junior Software Developer
                 </span> 
-            &nbsp;based out of&nbsp;
+                  &nbsp;based out of&nbsp;
                 <span className='bg-gradient-to-r from-fuchsia-600 to-green-400 text-transparent bg-clip-text'>
                   Vancouver, BC.  
                 </span>
               </p>
-              <p className='text-xl text-yellow-400 text-center mt-4 animate-fade-in-long'>Mouse&nbsp;
-              <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
-                  left
-              </span>
-              &nbsp;or&nbsp; 
-              <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
-                right
-              </span>
-              &nbsp;to learn more about me!</p>
+
+              {
+                width >= breakpoint? 
+                  <p className='text-xl text-yellow-400 text-center mt-4 animate-fade-in-long'>Hover your mouse&nbsp;
+                    <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
+                        left
+                    </span>
+                      &nbsp;or&nbsp; 
+                    <span className='bg-gradient-to-r from-fuchsia-600 to-sky-400 text-transparent bg-clip-text'>
+                      right
+                    </span>
+                  &nbsp;to learn more about me!
+                  </p>
+              :<></>
+              }
+              
             </div>                        
             <div id='aboutLink' className='w-1/4 h-screen flex justify-center items-center opacity-0 hover:opacity-100 transition duration-500 bg-gradient-to-r from-transparent to-purple-700'>
               <Link href='about_me' className='text-3xl bg-gradient-to-l from-yellow-400 to-purple-700 text-transparent bg-clip-text sm:rotate-90 md:rotate-0'>About Me</Link>
