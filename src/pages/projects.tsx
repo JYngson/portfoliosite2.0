@@ -52,7 +52,15 @@ export default function projects() {
                           }
                         </p>
                       </div>
-                      <Link href={project.link} target="_blank" className='text-purple-800 text-end'>Project Link</Link>
+                      <div className='flex flex-row-reverse'>
+                        {
+                          project.videoLink? 
+                            <Link href={project.videoLink} target="_blank" className='text-purple-800 ml-2'>Demo Video</Link>
+                          :
+                          <></>
+                        }
+                        <Link href={project.link} target="_blank" className='text-purple-800'>Project Link</Link>
+                      </div>
                     </div>
 
                   )
