@@ -38,7 +38,7 @@ export default function Home() {
                   </h1>
                   <p className='text-2xl text-yellow-400 text-center animate-fade-in-long'>I'm a&nbsp;
                     <span className='bg-gradient-to-r from-cyan-400 to-green-400 text-transparent bg-clip-text'>
-                      Junior Software Developer
+                      Software Developer
                     </span> 
                       &nbsp;based out of&nbsp;
                     <span className='bg-gradient-to-r from-fuchsia-600 to-green-400 text-transparent bg-clip-text'>
