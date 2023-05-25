@@ -1,11 +1,11 @@
 {
   "greeting":"Hi, I'm James. 👋",
-  "headline":"I'm a junior software developer specializing in Javascript and React, working for a startup in Vancouver BC.",
+  "headline":"I'm a software developer specializing in Javascript and React, working for a startup in Vancouver BC.",
   "stats":{
     "years": 3, 
     "location":"Vancouver, BC",
     "primaryTech": ["Javascript", "React", "HTML", "CSS", "Next.js", "TypeScript"], 
-    "secondaryTech": ["Python", "Django", "PostgreSQL"],
+    "secondaryTech": ["Python", "Django", "PostgreSQL", "C#", "Unity"],
     "education": [
       {
         "school": "Athabasca University",
